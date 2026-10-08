@@ -105,7 +105,9 @@ h1,h2,h3{font-family:var(--font-title);font-weight:400;color:var(--main-dark)}
 .venue-icon{font-size:2rem;color:var(--gold);margin:0 8px 15px}
 .venue-type{font-family:var(--font-sans);font-size:.75rem;letter-spacing:3px;color:var(--gold);margin-bottom:5px;font-weight:600}
 .venue-name{font-size:1.8rem;margin-bottom:10px}
-.venue-time{font-family:var(--font-sans);font-weight:500;font-size:1.1rem;color:var(--main-dark);margin-bottom:20px}
+.venue-time{font-family:var(--font-sans);font-weight:500;font-size:1.1rem;color:var(--main-dark);margin-bottom:12px}
+.venue-note{font-family:var(--font-sans);font-size:.7rem;letter-spacing:1.5px;color:var(--gold-light);opacity:.9;margin-bottom:20px;text-transform:uppercase}
+.venue-note i{margin-right:6px;color:var(--gold)}
 .map-iframe-container{width:100%;height:220px;overflow:hidden;margin-bottom:20px;border:1px solid rgba(201,169,106,.25)}
 .map-iframe-container iframe{width:100%;height:100%;filter:grayscale(.4) invert(.9) hue-rotate(180deg) contrast(.9)}
 
@@ -127,6 +129,9 @@ h1,h2,h3{font-family:var(--font-title);font-weight:400;color:var(--main-dark)}
 
 /* Vestimenta */
 .satin-black{background:linear-gradient(135deg,#000 0%,#1c1c22 25%,#000 50%,#17171d 75%,#000 100%);color:var(--white);width:calc(100% + 60px);margin:0 -30px 40px;padding:50px 30px;border-top:1px solid rgba(201,169,106,.4);border-bottom:1px solid rgba(201,169,106,.4);box-shadow:inset 0 0 50px rgba(0,0,0,.9)}
+.dress-icons{display:flex;justify-content:center;gap:28px;margin-bottom:15px;color:var(--gold);font-size:2.2rem}
+.dress-icons i{animation:floatY 3.5s ease-in-out infinite}
+.dress-icons i:last-child{animation-delay:.6s}
 .dress-code-title{font-family:var(--font-sans);font-size:.8rem;letter-spacing:4px;margin-bottom:15px;color:var(--gold-light);font-weight:500}
 .dress-code-main{font-size:2.8rem;margin-bottom:10px;line-height:1.1}
 .no-kids-block{padding:25px;width:100%;border-top:1px solid rgba(201,169,106,.4);border-bottom:1px solid rgba(201,169,106,.4);margin-bottom:40px}
@@ -215,7 +220,7 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
       <p class="anim-el reveal-text" style="font-family:var(--font-script);font-size:2.2rem;color:var(--gold);margin-bottom:25px">Con la bendición de nuestros padres</p>
       <div class="parents-group anim-el fade-in-left">
         <h4>Padres de la Novia</h4>
-        <p>San Juana Mejía Salazar<br>Miguel Ángel Mascorro López <span style="color:var(--gold)">†</span><br><small>(finado)</small></p>
+        <p>San Juana Mejía Salazar<br>Miguel Ángel Mascorro López <span style="color:var(--gold)">†</span></p>
       </div>
       <div class="parents-group anim-el fade-in-right">
         <h4>Padres del Novio</h4>
@@ -265,10 +270,11 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
     <div class="divider anim-el scale-in"><i class="fa-solid fa-map-location-dot" style="font-size:.9rem"></i></div>
 
     <div class="venue-card anim-el flip-in">
-      <div><i class="fa-solid fa-church venue-icon"></i><i class="fa-solid fa-champagne-glasses venue-icon" style="animation-delay:.6s"></i></div>
-      <p class="venue-type">CEREMONIA RELIGIOSA Y RECEPCIÓN</p>
+      <div><i class="fa-solid fa-champagne-glasses venue-icon"></i></div>
+      <p class="venue-type">CELEBRACIÓN</p>
       <h3 class="venue-name">Salón Lucernario</h3>
       <p class="venue-time"><i class="fa-regular fa-clock" style="color:var(--gold)"></i> 7:00 P.M.</p>
+      <p class="venue-note"><i class="fa-solid fa-car-side"></i>El servicio incluye valet parking</p>
       <div class="map-iframe-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4025.3373005408644!2d-102.27803039999999!3d21.882741899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee72aea2985b%3A0x4bf51c4e913983a2!2sSal%C3%B3n%20Lucernario!5e1!3m2!1ses-419!2smx!4v1791248602636!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
@@ -286,8 +292,8 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
     <div class="timeline-section">
       <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-champagne-glasses"></i></div><div><div class="timeline-time">07:00 P.M.</div><div class="timeline-event">Recepción</div></div></div>
       <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-chair"></i></div><div><div class="timeline-time">07:45 P.M.</div><div class="timeline-event">Acomodo de nuestras personas invitadas</div></div></div>
-      <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-utensils"></i></div><div><div class="timeline-time">08:00 P.M.</div><div class="timeline-event">Entrada de los novios / Banquete</div></div></div>
-      <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-heart"></i></div><div><div class="timeline-time">09:00 P.M.</div><div class="timeline-event">Baile de los nuevos esposos</div></div></div>
+      <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-utensils"></i></div><div><div class="timeline-time">08:00 P.M.</div><div class="timeline-event">Nuestra entrada / Banquete</div></div></div>
+      <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-heart"></i></div><div><div class="timeline-time">09:00 P.M.</div><div class="timeline-event">Nuestro baile</div></div></div>
       <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-music"></i></div><div><div class="timeline-time">09:30 P.M.</div><div class="timeline-event">¡Abrimos pista!</div></div></div>
       <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-moon"></i></div><div><div class="timeline-time">12:00 A.M.</div><div class="timeline-event">Cena de desvelados</div></div></div>
       <div class="timeline-item anim-el fade-in-left"><div class="timeline-icon"><i class="fa-solid fa-martini-glass"></i></div><div><div class="timeline-time">01:45 A.M.</div><div class="timeline-event">La última y nos vamos</div></div></div>
@@ -329,9 +335,9 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
     </div>
 
     <div class="satin-black anim-el scale-in" style="margin-top:30px">
-      <i class="fa-solid fa-user-tie" style="color:var(--gold);font-size:2rem;margin-bottom:15px;display:block;animation:floatY 3.5s ease-in-out infinite"></i>
+      <div class="dress-icons"><i class="fa-solid fa-user-tie"></i><i class="fa-solid fa-person-dress"></i></div>
       <p class="dress-code-title">CÓDIGO DE VESTIMENTA</p>
-      <h2 class="dress-code-main">All Black<br>Formal</h2>
+      <h2 class="dress-code-main">All Black</h2>
       <p style="font-family:var(--font-sans);letter-spacing:3px;font-size:.85rem;margin-bottom:20px;color:var(--gold-light)">FORMAL / ETIQUETA</p>
       <p style="font-size:.95rem;font-style:italic;opacity:.9;line-height:1.6">Nos encantará verlos lucir espectaculares vistiendo exclusivamente de negro para esta gran noche.</p>
     </div>
@@ -339,7 +345,7 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
     <div class="no-kids-block anim-el blur-in">
       <p style="font-size:1rem;font-style:italic;line-height:1.6;text-align:center">
         <i class="fa-solid fa-user-group" style="color:var(--gold);font-size:1.5rem;display:block;margin-bottom:12px"></i>
-        Para que todos podamos disfrutar de una velada inolvidable, hemos decidido que nuestra boda sea un evento <b style="color:var(--main-dark)">exclusivamente para adultos</b>. Agradecemos profundamente su comprensión.
+        Queremos que esta velada sea una escapada especial <b style="color:var(--main-dark)">solo para los adultos</b>, agradecemos profundamente su comprensión.
       </p>
     </div>
 
@@ -383,7 +389,7 @@ h2:not(.dress-code-main),.names-container span.name,.save-date-date{background:l
         </div>
         <div id="dynamicGuestList" style="width:100%;text-align:left"></div>
         <button type="button" onclick="sendRSVP()" class="btn-whatsapp" style="margin-top:25px"><i class="fa-brands fa-whatsapp" style="font-size:1.2rem"></i> CONFIRMAR VÍA WHATSAPP</button>
-        <p class="deadline-text">CONFIRMAR ANTES DEL 2 DE DICIEMBRE</p>
+        <p class="deadline-text">CONFIRMAR ANTES DEL 02 DE NOVIEMBRE</p>
       </form>
     </div>
 
@@ -429,7 +435,7 @@ const telefonoWhatsApp="524493875899";
 
 // 3. INICIALIZACIÓN
 document.addEventListener("DOMContentLoaded",function(){
-  // Retrasos escalonados automáticos (si el elemento no trae uno propio)
+  // Retrasos escalonados automáticos
   document.querySelectorAll('.timeline-section').forEach(s=>s.querySelectorAll('.anim-el').forEach((el,i)=>el.style.transitionDelay=(i*0.12)+'s'));
   document.querySelectorAll('.gallery-grid').forEach(g=>g.querySelectorAll('.anim-el').forEach((el,i)=>el.style.transitionDelay=(i*0.15)+'s'));
   document.querySelectorAll('.parents-section .anim-el').forEach((el,i)=>{if(!el.style.transitionDelay)el.style.transitionDelay=(i*0.2)+'s'});
@@ -522,7 +528,7 @@ function sendWishes(){
 
 // 6. ICS (2 ene 2027, 7:00 p.m. hora centro = 01:00 UTC del día 3)
 function downloadICS(){
-  const cal=`BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Boda Eri y Jesus//ES\nBEGIN:VEVENT\nDTSTART:20270103T010000Z\nDTEND:20270103T080000Z\nSUMMARY:Boda de Eri y Jesús\nLOCATION:Salón Lucernario\nDESCRIPTION:¡Acompáñanos a celebrar nuestra boda! Ceremonia religiosa y recepción a las 7:00 PM en Salón Lucernario.\nEND:VEVENT\nEND:VCALENDAR`;
+  const cal=`BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Boda Eri y Jesus//ES\nBEGIN:VEVENT\nDTSTART:20270103T010000Z\nDTEND:20270103T080000Z\nSUMMARY:Boda de Eri y Jesús\nLOCATION:Salón Lucernario\nDESCRIPTION:¡Acompáñanos a celebrar nuestra boda! Celebración a las 7:00 PM en Salón Lucernario.\nEND:VEVENT\nEND:VCALENDAR`;
   const url=URL.createObjectURL(new Blob([cal],{type:'text/calendar;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='Boda_Eri_y_Jesus.ics';
   document.body.appendChild(a);a.click();document.body.removeChild(a);
