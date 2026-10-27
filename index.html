@@ -445,10 +445,651 @@ document.addEventListener("DOMContentLoaded",function(){
   },{threshold:.12});
   document.querySelectorAll('.anim-el').forEach(el=>observer.observe(el));
 
-  // LISTA DE INVITADOS (agregar aquí cuando se tenga). Formato:
-  // "1": { inv: "Nombre Invitado", pases: 1, nombres: ["Nombre Invitado"] },
-  // "2": { inv: "Ana y Luis", pases: 2, nombres: ["Ana", "Luis"] },
-  const listaInvitados={};
+  // LISTA DE INVITADOS GENERADA
+  const listaInvitados = {
+    "1": {
+      "inv": "San Juana Mejía Salazar",
+      "pases": 2,
+      "nombres": [
+        "San Juana Mejía Salazar",
+        "Hortensia Salazar Mercado"
+      ]
+    },
+    "3": {
+      "inv": "Norma Iveth Mascorro Mejía",
+      "pases": 2,
+      "nombres": [
+        "Norma Iveth Mascorro Mejía",
+        "Luis Enrique Romo Díaz"
+      ]
+    },
+    "5": {
+      "inv": "Miguel Angel Mascorro Mejía",
+      "pases": 2,
+      "nombres": [
+        "Miguel Angel Mascorro Mejía",
+        "Ana Esmeralda González García"
+      ]
+    },
+    "7": {
+      "inv": "Plácido Hernández Macías",
+      "pases": 2,
+      "nombres": [
+        "Plácido Hernández Macías",
+        "Ma. Del Rosario Vargas Barbosa"
+      ]
+    },
+    "9": {
+      "inv": "Fernando Hernández Vargas",
+      "pases": 3,
+      "nombres": [
+        "Fernando Hernández Vargas",
+        "Fabiola Beltrán",
+        "Isabella Hernández Beltran"
+      ]
+    },
+    "12": {
+      "inv": "Oscar Hernández Vargas",
+      "pases": 2,
+      "nombres": [
+        "Oscar Hernández Vargas",
+        "Ma. Guadalupe López Rodríguez"
+      ]
+    },
+    "14": {
+      "inv": "Octavio Hernández Vargas",
+      "pases": 2,
+      "nombres": [
+        "Octavio Hernández Vargas",
+        "Susana Cabrera"
+      ]
+    },
+    "16": {
+      "inv": "Alejandro Hernández Vargas",
+      "pases": 2,
+      "nombres": [
+        "Alejandro Hernández Vargas",
+        "Concepción Aguilera"
+      ]
+    },
+    "18": {
+      "inv": "Patricia González",
+      "pases": 7,
+      "nombres": [
+        "Patricia González",
+        "Carlos Felipe González",
+        "Destiny González",
+        "Jaylynn González",
+        "Anthony (esposo Jaylynn)",
+        "Yaretzy González",
+        "Carlos Jared González"
+      ]
+    },
+    "25": {
+      "inv": "Lucía Hernández Vargas",
+      "pases": 6,
+      "nombres": [
+        "Lucía Hernández Vargas",
+        "Álvaro Saucedo",
+        "Tony Saucedo",
+        "Óscar García",
+        "Álvaro Saucedo (hijo)",
+        "Lucía Saucedo"
+      ]
+    },
+    "31": {
+      "inv": "María Guadalupe Hernández Vargas",
+      "pases": 4,
+      "nombres": [
+        "María Guadalupe Hernández Vargas",
+        "Luis Amador Torales",
+        "Patricia Adileny Torales Hernández",
+        "Bryton Ibarra"
+      ]
+    },
+    "35": {
+      "inv": "Ángela María Hernández Vargas",
+      "pases": 2,
+      "nombres": [
+        "Ángela María Hernández Vargas",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "37": {
+      "inv": "Laura Antonia Hernández Vargas",
+      "pases": 1,
+      "nombres": [
+        "Laura Antonia Hernández Vargas"
+      ]
+    },
+    "38": {
+      "inv": "Juan del Rosario Hernández Vargas",
+      "pases": 1,
+      "nombres": [
+        "Juan del Rosario Hernández Vargas"
+      ]
+    },
+    "39": {
+      "inv": "Yunuen Adriana Martínez Lara",
+      "pases": 1,
+      "nombres": [
+        "Yunuen Adriana Martínez Lara"
+      ]
+    },
+    "40": {
+      "inv": "Dilian Jearim Tejeda Gómez",
+      "pases": 1,
+      "nombres": [
+        "Dilian Jearim Tejeda Gómez"
+      ]
+    },
+    "41": {
+      "inv": "Marcela Alejandra Femat Silva",
+      "pases": 2,
+      "nombres": [
+        "Marcela Alejandra Femat Silva",
+        "Jorge Alberto Romero Anguiano"
+      ]
+    },
+    "43": {
+      "inv": "Zaira Alejandra Galván Silva",
+      "pases": 2,
+      "nombres": [
+        "Zaira Alejandra Galván Silva",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "45": {
+      "inv": "Rocio Lopez Mejía",
+      "pases": 2,
+      "nombres": [
+        "Rocio Lopez Mejía",
+        "Gabriel Arellano"
+      ]
+    },
+    "47": {
+      "inv": "Karla Ivette Martínez Silva",
+      "pases": 2,
+      "nombres": [
+        "Karla Ivette Martínez Silva",
+        "Fernando Cisneros Tovar"
+      ]
+    },
+    "49": {
+      "inv": "Alejandra Íñiguez",
+      "pases": 2,
+      "nombres": [
+        "Alejandra Íñiguez",
+        "Eduardo Íñiguez"
+      ]
+    },
+    "51": {
+      "inv": "Ángela Paulina Barrientos Gallegos",
+      "pases": 2,
+      "nombres": [
+        "Ángela Paulina Barrientos Gallegos",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "53": {
+      "inv": "Liliana Barreiro Silva",
+      "pases": 1,
+      "nombres": [
+        "Liliana Barreiro Silva"
+      ]
+    },
+    "54": {
+      "inv": "María Eugenia Martínez Bejarano",
+      "pases": 1,
+      "nombres": [
+        "María Eugenia Martínez Bejarano"
+      ]
+    },
+    "55": {
+      "inv": "Joesselyn Priscila Buendía García",
+      "pases": 2,
+      "nombres": [
+        "Joesselyn Priscila Buendía García",
+        "José Rivera Reyes"
+      ]
+    },
+    "57": {
+      "inv": "Damaris Gómez",
+      "pases": 2,
+      "nombres": [
+        "Damaris Gómez",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "59": {
+      "inv": "Paola Guadalupe Veloz Macías",
+      "pases": 2,
+      "nombres": [
+        "Paola Guadalupe Veloz Macías",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "61": {
+      "inv": "Ma. Montserrat Palacios Reyes",
+      "pases": 2,
+      "nombres": [
+        "Ma. Montserrat Palacios Reyes",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "63": {
+      "inv": "Andrea Frida González Martínez",
+      "pases": 1,
+      "nombres": [
+        "Andrea Frida González Martínez"
+      ]
+    },
+    "64": {
+      "inv": "Marisol Macías Ojeda",
+      "pases": 2,
+      "nombres": [
+        "Marisol Macías Ojeda",
+        "Jorge Humberto Cano Guerra"
+      ]
+    },
+    "66": {
+      "inv": "José  Iván Lozano Franco",
+      "pases": 2,
+      "nombres": [
+        "José  Iván Lozano Franco",
+        "Andrea Michelle Morales Velasco"
+      ]
+    },
+    "68": {
+      "inv": "Juan Ricardo Lucio Ramírez",
+      "pases": 2,
+      "nombres": [
+        "Juan Ricardo Lucio Ramírez",
+        "Dulce Karina Tenorio Ponce"
+      ]
+    },
+    "70": {
+      "inv": "Óscar Durán Sandoval",
+      "pases": 2,
+      "nombres": [
+        "Óscar Durán Sandoval",
+        "Ana Cruz"
+      ]
+    },
+    "72": {
+      "inv": "Daniel Humberto Calzada Pérez",
+      "pases": 2,
+      "nombres": [
+        "Daniel Humberto Calzada Pérez",
+        "Madison Fernanda Escalera Requenez"
+      ]
+    },
+    "74": {
+      "inv": "Gabriel Alfredo Urzúa Gómez",
+      "pases": 2,
+      "nombres": [
+        "Gabriel Alfredo Urzúa Gómez",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "76": {
+      "inv": "Francisco Javier García Quezada",
+      "pases": 2,
+      "nombres": [
+        "Francisco Javier García Quezada",
+        "Elsie Anayeli Agramón Camargo"
+      ]
+    },
+    "78": {
+      "inv": "Miguel Gerardo Medina Carrera",
+      "pases": 2,
+      "nombres": [
+        "Miguel Gerardo Medina Carrera",
+        "Ana Lilia Esparza Mireles"
+      ]
+    },
+    "80": {
+      "inv": "Gloria Paulina Romero Domínguez",
+      "pases": 2,
+      "nombres": [
+        "Gloria Paulina Romero Domínguez",
+        "Juan Antonio Zermeño Romo"
+      ]
+    },
+    "82": {
+      "inv": "Óscar Eduardo Carranza Ávila",
+      "pases": 1,
+      "nombres": [
+        "Óscar Eduardo Carranza Ávila"
+      ]
+    },
+    "83": {
+      "inv": "Alejandro Ignacio Santamaría",
+      "pases": 1,
+      "nombres": [
+        "Alejandro Ignacio Santamaría"
+      ]
+    },
+    "84": {
+      "inv": "Francys Jazmín Quezada De Luna",
+      "pases": 1,
+      "nombres": [
+        "Francys Jazmín Quezada De Luna"
+      ]
+    },
+    "85": {
+      "inv": "Christian Adrián Lozano Muñoz",
+      "pases": 2,
+      "nombres": [
+        "Christian Adrián Lozano Muñoz",
+        "Susana Lupercio"
+      ]
+    },
+    "87": {
+      "inv": "Carlos Gerardo Calderón Macías",
+      "pases": 2,
+      "nombres": [
+        "Carlos Gerardo Calderón Macías",
+        "Lizbeth Jimena Hernández Romo"
+      ]
+    },
+    "89": {
+      "inv": "Armando Beltrán Díaz",
+      "pases": 2,
+      "nombres": [
+        "Armando Beltrán Díaz",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "91": {
+      "inv": "Evelyn Andrea Arenas Rentería",
+      "pases": 2,
+      "nombres": [
+        "Evelyn Andrea Arenas Rentería",
+        "Marco Antonio Martínez Díaz de León"
+      ]
+    },
+    "93": {
+      "inv": "Jennifer Kristel Parra Salas",
+      "pases": 2,
+      "nombres": [
+        "Jennifer Kristel Parra Salas",
+        "Jorge Pedroza Bernal"
+      ]
+    },
+    "95": {
+      "inv": "Miguel Loera",
+      "pases": 2,
+      "nombres": [
+        "Miguel Loera",
+        "Hilda Loera"
+      ]
+    },
+    "97": {
+      "inv": "Javier Vargas Barbosa",
+      "pases": 1,
+      "nombres": [
+        "Javier Vargas Barbosa"
+      ]
+    },
+    "98": {
+      "inv": "Sebastian Hernández Delgado",
+      "pases": 2,
+      "nombres": [
+        "Sebastian Hernández Delgado",
+        "Xenia Méndez Batres"
+      ]
+    },
+    "100": {
+      "inv": "Anibal Jonathan Zamarripa Herrera",
+      "pases": 2,
+      "nombres": [
+        "Anibal Jonathan Zamarripa Herrera",
+        "Paloma Pedroza"
+      ]
+    },
+    "102": {
+      "inv": "Verónica Aguirre Aguayo",
+      "pases": 1,
+      "nombres": [
+        "Verónica Aguirre Aguayo"
+      ]
+    },
+    "103": {
+      "inv": "Elda Enríquez",
+      "pases": 1,
+      "nombres": [
+        "Elda Enríquez"
+      ]
+    },
+    "104": {
+      "inv": "Alfredo Martínez López",
+      "pases": 2,
+      "nombres": [
+        "Alfredo Martínez López",
+        "Blanca (esposa)"
+      ]
+    },
+    "106": {
+      "inv": "Juan Carlos Jurado Ortiz",
+      "pases": 2,
+      "nombres": [
+        "Juan Carlos Jurado Ortiz",
+        "Alejandra Aguilar Reyes"
+      ]
+    },
+    "108": {
+      "inv": "Juan Carlos Jiménez",
+      "pases": 1,
+      "nombres": [
+        "Juan Carlos Jiménez"
+      ]
+    },
+    "109": {
+      "inv": "Leo Chávez",
+      "pases": 2,
+      "nombres": [
+        "Leo Chávez",
+        "Karen Silva Torres"
+      ]
+    },
+    "111": {
+      "inv": "Aida Mejía Salazar",
+      "pases": 2,
+      "nombres": [
+        "Aida Mejía Salazar",
+        "Alfredo Becerra"
+      ]
+    },
+    "113": {
+      "inv": "Juan Angel Zacarías Mejía",
+      "pases": 2,
+      "nombres": [
+        "Juan Angel Zacarías Mejía",
+        "Mónica Guadalupe Rodríguez Vázquez"
+      ]
+    },
+    "115": {
+      "inv": "Ivone Estefanía Esparza Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Ivone Estefanía Esparza Mascorro",
+        "Omar Galicia Juárez"
+      ]
+    },
+    "117": {
+      "inv": "Juana Mascorro López",
+      "pases": 4,
+      "nombres": [
+        "Juana Mascorro López",
+        "Alejandro Esparza Jiménez",
+        "Alejandro Salvador Esparza Mascorro",
+        "Fernanda Esparza Mascorro"
+      ]
+    },
+    "121": {
+      "inv": "Eduardo Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Eduardo Mascorro",
+        "Dulce Ponce"
+      ]
+    },
+    "123": {
+      "inv": "Horey Fernando Campos",
+      "pases": 2,
+      "nombres": [
+        "Horey Fernando Campos",
+        "Natalia (esposa)"
+      ]
+    },
+    "125": {
+      "inv": "Enrique Mascorro López",
+      "pases": 1,
+      "nombres": [
+        "Enrique Mascorro López"
+      ]
+    },
+    "126": {
+      "inv": "Cesar Rodriguez Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Cesar Rodriguez Mascorro",
+        "Flor (esposa)"
+      ]
+    },
+    "128": {
+      "inv": "Cinthya Rodriguez Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Cinthya Rodriguez Mascorro",
+        "Edgar (esposo)"
+      ]
+    },
+    "130": {
+      "inv": "Dulce Rodríguez Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Dulce Rodríguez Mascorro",
+        "Ricardo (esposo)"
+      ]
+    },
+    "132": {
+      "inv": "Saul Mascorro López",
+      "pases": 2,
+      "nombres": [
+        "Saul Mascorro López",
+        "Leticia Luévano"
+      ]
+    },
+    "134": {
+      "inv": "Blanca Mascorro López",
+      "pases": 4,
+      "nombres": [
+        "Blanca Mascorro López",
+        "Hector Rodríguez (esposo)",
+        "Acompañante (mayor de edad)",
+        "Acompañante (mayor de edad)"
+      ]
+    },
+    "138": {
+      "inv": "Hector Mascorro Lopez",
+      "pases": 2,
+      "nombres": [
+        "Hector Mascorro Lopez",
+        "Maricela Rodriguez"
+      ]
+    },
+    "140": {
+      "inv": "Ricardo Mascorro Rodríguez",
+      "pases": 2,
+      "nombres": [
+        "Ricardo Mascorro Rodríguez",
+        "Lesly (esposa)"
+      ]
+    },
+    "142": {
+      "inv": "Alma Mascorro López",
+      "pases": 3,
+      "nombres": [
+        "Alma Mascorro López",
+        "Ricardo López Muñoz",
+        "Cristian López Mascorro"
+      ]
+    },
+    "145": {
+      "inv": "Alfredo López Mascorro",
+      "pases": 2,
+      "nombres": [
+        "Alfredo López Mascorro",
+        "Cecilia Olvera (esposa)"
+      ]
+    },
+    "147": {
+      "inv": "Arturo Mascorro Hernández",
+      "pases": 2,
+      "nombres": [
+        "Arturo Mascorro Hernández",
+        "Christian L Varela (esposa)"
+      ]
+    },
+    "149": {
+      "inv": "Javier Mascorro López",
+      "pases": 2,
+      "nombres": [
+        "Javier Mascorro López",
+        "María Elena (esposa)"
+      ]
+    },
+    "151": {
+      "inv": "Maribel Mascorro López",
+      "pases": 2,
+      "nombres": [
+        "Maribel Mascorro López",
+        "José Luis Ornelas (esposo)"
+      ]
+    },
+    "153": {
+      "inv": "Alfonso Piña Ruvalcaba",
+      "pases": 2,
+      "nombres": [
+        "Alfonso Piña Ruvalcaba",
+        "Montserrat (esposa)"
+      ]
+    },
+    "155": {
+      "inv": "Jesús Piña López",
+      "pases": 2,
+      "nombres": [
+        "Jesús Piña López",
+        "Aurora Ruvalcaba"
+      ]
+    },
+    "157": {
+      "inv": "Antonio Martínez",
+      "pases": 2,
+      "nombres": [
+        "Antonio Martínez",
+        "Leticia Pérez (esposa)"
+      ]
+    },
+    "159": {
+      "inv": "Serapio Antonio Martínez Pérez",
+      "pases": 2,
+      "nombres": [
+        "Serapio Antonio Martínez Pérez",
+        "María Adame (esposa)"
+      ]
+    },
+    "161": {
+      "inv": "Rosario Martínez Pérez",
+      "pases": 2,
+      "nombres": [
+        "Rosario Martínez Pérez",
+        "Manuel Lopez (esposo)"
+      ]
+    }
+  };
 
   const p=new URLSearchParams(window.location.search);
   const guestId=p.get('id');
